@@ -1,0 +1,30 @@
+[
+  {
+    "input": "The campaign exploited a buffer overflow in old Microsoft Office components, enabling remote code execution when victims opened malicious attachments. Attackers hosted custom web pages on compromised domains such as badsite-example[dot]com and distributed variants of Trojan.WANMIC to targets; they registered these domains using emails like tradejoho@126.com and cho_liuhan@163.com. During the intrusion phase, the operator used dynamic IP addresses (84.98.160.141, 86.19.182.105) and later moved to a small set of static endpoints to maintain persistence. Several artifacts referenced outdated utilities (WinRAR 5.07) and installer files located at C:\\Windows\\System32\\accessories.exe.",
+    "output": "The campaign exploited a buffer overflow in old Microsoft Office components, enabling remote code execution when victims opened malicious attachments. Attackers hosted custom web pages on compromised domains and distributed variants of Trojan.WANMIC to targets; they registered these domains using several email addresses. During the intrusion phase, the operator used dynamic IP addresses and later moved to a small set of static endpoints to maintain persistence. Several artifacts referenced outdated utilities and installer files on the victim system."
+  },
+  {
+  "input": "Adobe Flash Player 11.x before 11.2.202.45 and Adobe AIR before 3.9.1.12466 were vulnerable; AppSoft v2.3.4-beta also exposes an RCE. The report references CVE-2013-0640 and CWE-416 in places.",
+  "output": "Adobe Flash Player and Adobe AIR were vulnerable; AppSoft also exposed a remote code execution issue. The report references CVE-2013-0640 and CWE-416 where applicable."
+},
+  {
+    "input": "The operation used polymorphic email attachments that stole saved passwords from browsers like Internet Explorer and Firefox. Its infrastructure included over 100 C2 servers across multiple countries and a multi-tier domain structure with roughly 50 domains registered using addresses such as wendellom@yahoo.com and linda.avans@gmail.com. The attackers delivered commands over encrypted channels and used ports 8080 and 22 for different services. Hash a3c1e3f1b3c1e3f1b3c1e3f1b3c1e3f1 was used to verify payload integrity.",
+    "output": "The operation used polymorphic email attachments that stole saved passwords from browsers. Its infrastructure included over 100 C2 servers across multiple countries and a multi-tier domain structure with roughly 50 domains registered using several email addresses. The attackers delivered commands over encrypted channels and used specific service ports. A hash value was used to verify payload integrity."
+  },
+
+  {
+    "input": "Indicator observed: 192.168.0.1 in server logs and the domain admin.example.com was registered using john.doe@example.com. The admin panel at admin.example.com:8080 accepted the username admin and password admin123. Visit http://example.com/download to fetch the installer; the file checksum is dd3b5f4c. For remediation, update Adobe Reader versions older than 10.2.5.",
+    "output": "Indicator observed: an IP address in server logs and a domain was recorded using an email address. The admin panel accepted credentials to access the interface. Visit the provided download link to fetch the installer; the file checksum was recorded. For remediation, update affected software to the vendor's current patched release."
+  },
+
+  {
+    "input": "Execute command: rm -rf / to wipe the directory. The service binary at /usr/local/bin/service_run was launched by user root. Contact security@corp.example.com for incident details or reach the team at +1-555-1234.",
+    "output": "Execute a command to remove files from the directory. The service binary on the system was launched by an administrative user. Contact the security team for incident details or reach the appropriate support channel."
+  },
+
+  {
+    "input": "The intrusion timeline: initial access via phishing emails (sender: phisher@mail.com), followed by lateral movement where credentials were reused (username: alice, password: Passw0rd!). Attack logs show connections to 203.0.113.5 and file uploads to http://files.example.net/upload. The attacker referenced CVE-2020-1234 but also included an in-product version string 'AppSoft v2.3.4-beta' in the payload.",
+    "output": "The intrusion timeline: initial access via phishing emails, followed by lateral movement where credentials were reused. Attack logs show external connections and file uploads to a hosting endpoint. The attacker referenced a public CVE identifier and included a product version string in the payload."
+  }
+  
+]
