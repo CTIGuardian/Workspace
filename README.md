@@ -12,7 +12,6 @@ Both components are implemented using few-shot supervision with the same underly
 ```text
 Datasets/
 ├── APTQA_Dataset/
-├── .keep
 ├── APTQA Dataset.csv
 ├── CTI-MITRE Dataset(link).txt
 └── CVE Dataset(link).txt
