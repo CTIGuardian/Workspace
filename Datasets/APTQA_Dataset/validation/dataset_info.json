@@ -1,0 +1,42 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 10152913,
+  "description": "",
+  "download_checksums": {
+    "C:/Users/47991321/OneDrive - Macquarie University/Desktop/CSET/2. Model Training/APTQA/new/APTQA Dataset.csv": {
+      "num_bytes": 10164979,
+      "checksum": null
+    }
+  },
+  "download_size": 10164979,
+  "features": {
+    "Question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Answer": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 20317892,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 10152913,
+      "num_examples": 5093,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

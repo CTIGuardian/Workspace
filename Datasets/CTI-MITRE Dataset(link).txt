@@ -1,0 +1,1 @@
+https://github.com/dessertlab/cti-to-mitre-with-nlp/blob/main/data/dataset.csv
