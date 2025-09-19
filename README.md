@@ -1,4 +1,47 @@
-### CTIGuardian: Mitigating the Privacy Leakage of LLMs Trained on CTI Data with a Few-Shots
+# CTIGuardian: Mitigating the Privacy Leakage of LLMs Trained on CTI Data with a Few-Shots
+
+CTIGuardian is a framework designed to mitigate privacy leakage in fine-tuned Large Language Models (LLMs). Using Cyber Threat Intelligence (CTI) as the primary use case, it addresses the risk of sensitive data (e.g., IPs, domains, emails, ports) being extracted by adversarial users through data-extraction attacks. Instead of retraining or editing full models which is computationally costly, CTIGuardian introduces the idea of privacy alignment, inspired by safety alignment. The framework combines:
+- A privacy classifier — detects harmful or sensitive prompts.
+- A privacy redactor — removes sensitive information in model outputs while making the output coherent.
+  
+Both components are implemented using few-shot supervision with the same underlying LLM (e.g., GPT-4o mini, Mistral-7B Instruct).We evaluate CTIGuardian against Presidio (NER-based redaction baseline) and show that it achieves a better privacy–utility trade-off, preserving contextual meaning while reducing leakage risk. Although demonstrated on CTI data, the framework is domain-agnostic and can be applied to other sensitive areas such as healthcare or finance.
+
+<details>
+<summary><h2>Project Tree</h2></summary>
+
+```text
+Datasets/
+├── APTQA_Dataset/
+├── .keep
+├── APTQA Dataset.csv
+├── CTI-MITRE Dataset(link).txt
+└── CVE Dataset(link).txt
+
+Model Training/
+├── APTQA Evaluation Metrics/Accuracy_Metrics.xlsx
+├── Sample_inject_db/
+├── 1.Dataset_Creation_knowledge_injection.py
+├── 2.Knowledge_inject.py
+├── 3.Dataset_Creation_for_finetuning_.py
+├── 4.Finetuning.py
+└── 5.Inference_on_testset.py
+
+Data Extraction Attack/
+├── Prefixes(05Tokens).json
+├── config.yaml
+├── inference.py
+└── utils.py
+
+CTIGuardian/
+├── Entire_Pipe_4o.py
+├── classification_few_shots.json
+├── mistral.py
+└── redaction_few_shots.json
+
+README.md
+```
+</details> 
+
 
 ## Requirements
 
