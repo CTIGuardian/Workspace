@@ -40,6 +40,7 @@ https://github.com/dessertlab/cti-to-mitre-with-nlp/tree/main/data
 This dataset was used to enhance the model knowledege prior to fine-tuning via knowledge-injection. This contains a regularly updated list of Common Vulnerabilities and Exposures (CVE) sourced from the National Vulnerability Database (NVD). The CVEs are provided in JSON format for easy integration and consumption. 
 
 https://github.com/justakazh/CVE_Database
+Citation: V. Orbinato et al., Automatic Mapping of Unstructured Cyber Threat Intelligence: An Experimental Study, arXiv:2208.12144 (2022).
 
 ## Model Training
 
